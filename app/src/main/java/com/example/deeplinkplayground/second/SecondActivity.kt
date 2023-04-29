@@ -17,5 +17,6 @@ class SecondActivity : AppCompatActivity() {
 
         val navHostFragment = supportFragmentManager.findFragmentById(binding.fragmentContainerView.id) as NavHostFragment
         navController = navHostFragment.navController
+
     }
 }

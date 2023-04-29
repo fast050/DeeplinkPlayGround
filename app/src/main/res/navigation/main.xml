@@ -5,9 +5,19 @@
     android:id="@+id/main_activity"
     app:startDestination="@id/mainFragment">
 
+
+    <deepLink app:uri="https://dojoin.com/content/{activityId}"/>
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.deeplinkplayground.main.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+
+
+        <argument
+            android:name="activityId"
+            app:argType="string"
+            android:defaultValue="MainBro"/>
+
+    </fragment>
 </navigation>
