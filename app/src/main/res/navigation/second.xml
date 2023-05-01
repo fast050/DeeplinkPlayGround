@@ -6,8 +6,6 @@
     app:startDestination="@id/secondFragment">
 
 
-    <deepLink app:uri="https://dojoin.com/"/>
-
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.example.deeplinkplayground.second.SecondFragment"
